@@ -43,6 +43,7 @@ public class StudentController {
 
 		System.out.println(name);
 		System.out.println("Vanakkam da mapla");
+System.out.println("Vanakkam da mapla");
 		return studentService.getAllStudent();
 	}
 }
