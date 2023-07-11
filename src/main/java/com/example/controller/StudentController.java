@@ -30,10 +30,10 @@ public class StudentController {
 //
 //		return studentService.getAllStudent();
 //	}
-	
+
 	@GetMapping("students")
 	public List<Student> getAllStudent(@RequestBody Student student, HttpServletRequest request) {
-	    request.setAttribute("student", student);
+		request.setAttribute("student", student);
 
 		System.out.println(student.getName());
 
@@ -42,7 +42,7 @@ public class StudentController {
 		String name = studentService.getDemoResponse(student);
 
 		System.out.println(name);
-
+		System.out.println("Vanakkam da mapla");
 		return studentService.getAllStudent();
 	}
 }
